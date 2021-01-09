@@ -33,6 +33,6 @@ fig.show()
 listofdatawithinonestdev=[result for result in diceresult if result > firststdevstart and result < firststdevend]
 listofdatawithinsecondstdev=[result for result in diceresult if result >secondstdevstart and result<secondstdevend]
 listofdatawithinthirdstdev=[result for result in diceresult if result >thirdstdevstart and result<thirdstdevend]
-print("{}% of data lies within one stdev".format(len((listofdatawithinonestdev)*100.0/len(diceresult))))
-print("{}% of data lies within second stdev".format(len((listofdatawithinsecondstdev)*100.0/len(diceresult))))
-print("{}% of data lies within third stdev".format(len((listofdatawithinthirdstdev)*100.0/len(diceresult))))
+print("{}% of data lies within one standard deviation".format(len(listofdatawithinonestdev)*100.0/len(diceresult)))
+print("{}% of data lies within second standard deviation".format(len(listofdatawithinsecondstdev)*100.0/len(diceresult)))
+print("{}% of data lies within third standard deviation".format(len(listofdatawithinthirdstdev)*100.0/len(diceresult)))
